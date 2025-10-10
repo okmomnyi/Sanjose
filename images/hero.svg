@@ -1,0 +1,138 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="screenBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#screenBg)"/>
+  
+  <!-- Code lines with syntax highlighting -->
+  <g font-family="'Courier New', monospace" font-size="12" transform="translate(50, 80)">
+    <!-- Line 1 -->
+    <text x="0" y="0" fill="#10b981" font-weight="bold">function</text>
+    <text x="60" y="0" fill="#ffffff">initializeServer() {</text>
+    
+    <!-- Line 2 -->
+    <text x="20" y="20" fill="#fbbf24">const</text>
+    <text x="50" y="20" fill="#ffffff">server =</text>
+    <text x="100" y="20" fill="#3b82f6">new</text>
+    <text x="130" y="20" fill="#ffffff">Server({</text>
+    
+    <!-- Line 3 -->
+    <text x="40" y="40" fill="#ffffff">port:</text>
+    <text x="70" y="40" fill="#f59e0b">3000</text>
+    <text x="90" y="40" fill="#ffffff">,</text>
+    
+    <!-- Line 4 -->
+    <text x="40" y="60" fill="#ffffff">host:</text>
+    <text x="70" y="60" fill="#ef4444">'localhost'</text>
+    <text x="140" y="60" fill="#ffffff">,</text>
+    
+    <!-- Line 5 -->
+    <text x="40" y="80" fill="#ffffff">ssl:</text>
+    <text x="70" y="80" fill="#10b981">true</text>
+    <text x="100" y="80" fill="#ffffff">,</text>
+    
+    <!-- Line 6 -->
+    <text x="40" y="100" fill="#ffffff">security:</text>
+    <text x="100" y="100" fill="#ffffff">{</text>
+    
+    <!-- Line 7 -->
+    <text x="60" y="120" fill="#ffffff">encryption:</text>
+    <text x="130" y="120" fill="#ef4444">'AES-256'</text>
+    <text x="190" y="120" fill="#ffffff">,</text>
+    
+    <!-- Line 8 -->
+    <text x="60" y="140" fill="#ffffff">firewall:</text>
+    <text x="120" y="140" fill="#10b981">true</text>
+    <text x="150" y="140" fill="#ffffff">,</text>
+    
+    <!-- Line 9 -->
+    <text x="60" y="160" fill="#ffffff">monitoring:</text>
+    <text x="130" y="160" fill="#10b981">true</text>
+    <text x="160" y="160" fill="#ffffff">,</text>
+    
+    <!-- Line 10 -->
+    <text x="40" y="180" fill="#ffffff">}</text>
+    <text x="60" y="180" fill="#ffffff">,</text>
+    
+    <!-- Line 11 -->
+    <text x="40" y="200" fill="#ffffff">database:</text>
+    <text x="110" y="200" fill="#ffffff">{</text>
+    
+    <!-- Line 12 -->
+    <text x="60" y="220" fill="#ffffff">type:</text>
+    <text x="90" y="220" fill="#ef4444">'PostgreSQL'</text>
+    <text x="160" y="220" fill="#ffffff">,</text>
+    
+    <!-- Line 13 -->
+    <text x="60" y="240" fill="#ffffff">connection:</text>
+    <text x="140" y="240" fill="#ef4444">'secure'</text>
+    <text x="190" y="240" fill="#ffffff">,</text>
+    
+    <!-- Line 14 -->
+    <text x="60" y="260" fill="#ffffff">backup:</text>
+    <text x="110" y="260" fill="#10b981">true</text>
+    <text x="140" y="260" fill="#ffffff">,</text>
+    
+    <!-- Line 15 -->
+    <text x="40" y="280" fill="#ffffff">}</text>
+    <text x="60" y="280" fill="#ffffff">,</text>
+    
+    <!-- Line 16 -->
+    <text x="20" y="300" fill="#ffffff">});</text>
+    
+    <!-- Line 17 -->
+    <text x="0" y="320" fill="#ffffff">return</text>
+    <text x="50" y="320" fill="#ffffff">server;</text>
+    
+    <!-- Line 18 -->
+    <text x="0" y="340" fill="#ffffff">}</text>
+  </g>
+  
+  <!-- Animated cursor -->
+  <rect x="200" y="320" width="2" height="15" fill="#ffffff" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0;0.8" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Floating code elements -->
+  <g opacity="0.6" transform="translate(400, 100)">
+    <!-- Function brackets -->
+    <text x="0" y="0" fill="#10b981" font-family="monospace" font-size="24" font-weight="bold">{</text>
+    <text x="0" y="40" fill="#10b981" font-family="monospace" font-size="24" font-weight="bold">}</text>
+    
+    <!-- Code symbols -->
+    <text x="30" y="20" fill="#3b82f6" font-family="monospace" font-size="16">()</text>
+    <text x="50" y="20" fill="#f59e0b" font-family="monospace" font-size="16">[]</text>
+    <text x="70" y="20" fill="#ef4444" font-family="monospace" font-size="16">&lt;/&gt;</text>
+  </g>
+  
+  <!-- Terminal prompt -->
+  <g transform="translate(50, 50)">
+    <text x="0" y="0" fill="#10b981" font-family="monospace" font-size="14">$</text>
+    <text x="20" y="0" fill="#ffffff" font-family="monospace" font-size="14">npm run dev</text>
+    <circle cx="180" cy="5" r="3" fill="#10b981" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Title overlay -->
+  <rect x="0" y="0" width="600" height="60" fill="#0f172a" opacity="0.9"/>
+  <text x="300" y="25" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+    Professional IT Solutions
+  </text>
+  <text x="300" y="45" text-anchor="middle" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="14">
+    Code • Deploy • Maintain
+  </text>
+</svg>

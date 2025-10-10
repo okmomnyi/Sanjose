@@ -1,0 +1,29 @@
+{
+  "name": "sanjose-tech-solutions",
+  "version": "1.0.0",
+  "description": "Professional corporate website for Sanjose Tech Solutions",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s . -l 8000",
+    "dev": "serve -s . -l 8000",
+    "build": "echo 'Static site - no build required'",
+    "deploy": "echo 'Deploy to your preferred hosting service'"
+  },
+  "keywords": [
+    "corporate",
+    "website",
+    "IT services",
+    "responsive",
+    "accessible"
+  ],
+  "author": "Sanjose Tech Solutions",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/sanjose-tech-solutions.git"
+  },
+  "homepage": "https://sanjosetechsolutions.com"
+}

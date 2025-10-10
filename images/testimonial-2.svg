@@ -1,0 +1,19 @@
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="40" cy="40" r="35" fill="url(#bg2)"/>
+  
+  <!-- Person icon -->
+  <g fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round">
+    <!-- Head -->
+    <circle cx="40" cy="30" r="8"/>
+    <!-- Body/Shoulders -->
+    <path d="M 25 50 Q 40 45, 55 50" stroke-width="4"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="team2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="55" fill="url(#team2)"/>
+  
+  <!-- Person icon -->
+  <g fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round">
+    <!-- Head -->
+    <circle cx="60" cy="45" r="12"/>
+    <!-- Body/Shoulders -->
+    <path d="M 35 80 Q 60 75, 85 80" stroke-width="6"/>
+  </g>
+</svg>

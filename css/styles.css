@@ -310,7 +310,7 @@ a:hover {
 }
 
 .hero__company {
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-4xl);
   font-weight: 800;
   color: var(--color-primary);
   margin-bottom: var(--spacing-lg);
@@ -1682,7 +1682,7 @@ a:hover {
   }
   
   .hero__company {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-3xl);
     margin-bottom: var(--spacing-md);
   }
   
@@ -1739,7 +1739,7 @@ a:hover {
 
 @media (max-width: 480px) {
   .hero__company {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-2xl);
     margin-bottom: var(--spacing-sm);
   }
   

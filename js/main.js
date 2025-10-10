@@ -13,11 +13,13 @@
     const submitBtn = document.getElementById('submit-btn');
     const formSuccess = document.getElementById('form-success');
     const formError = document.getElementById('form-error');
+    const themeToggle = document.getElementById('theme-toggle');
 
     // Initialize the application
     function init() {
         setupNavigation();
         setupFormHandling();
+        setupThemeToggle();
         setupSmoothScrolling();
         setupAccessibility();
         setupAnimations();
@@ -565,12 +567,44 @@
     setupErrorHandling();
 
     // Expose public API if needed
+    /**
+     * Theme Toggle Functionality
+     */
+    function setupThemeToggle() {
+        if (!themeToggle) return;
+
+        // Get saved theme or default to light
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        setTheme(savedTheme);
+
+        // Add click event listener
+        themeToggle.addEventListener('click', toggleTheme);
+    }
+
+    function toggleTheme() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        setTheme(newTheme);
+    }
+
+    function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        
+        // Update button aria-label
+        if (themeToggle) {
+            themeToggle.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
+        }
+    }
+
     window.SanjoseTech = {
         openMobileMenu,
         closeMobileMenu,
         validateForm,
         showSuccessMessage,
-        showErrorMessage
+        showErrorMessage,
+        toggleTheme,
+        setTheme
     };
 
 })();

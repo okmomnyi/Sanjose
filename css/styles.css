@@ -309,6 +309,15 @@ a:hover {
   align-items: center;
 }
 
+.hero__company {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
 .hero__title {
   font-size: var(--font-size-5xl);
   font-weight: 700;

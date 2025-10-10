@@ -310,12 +310,25 @@ a:hover {
 }
 
 .hero__company {
-  font-size: var(--font-size-lg);
-  font-weight: 600;
+  font-size: var(--font-size-3xl);
+  font-weight: 800;
   color: var(--color-primary);
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.hero__company::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  border-radius: 2px;
 }
 
 .hero__title {
@@ -1668,6 +1681,11 @@ a:hover {
     flex-shrink: 0;
   }
   
+  .hero__company {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-md);
+  }
+  
   .hero__title {
     font-size: var(--font-size-3xl);
   }
@@ -1720,6 +1738,11 @@ a:hover {
 }
 
 @media (max-width: 480px) {
+  .hero__company {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-sm);
+  }
+  
   .hero__title {
     font-size: var(--font-size-2xl);
   }

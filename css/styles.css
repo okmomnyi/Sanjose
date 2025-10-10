@@ -285,6 +285,10 @@ a:hover {
   padding: var(--spacing-sm);
 }
 
+.nav__item--mobile-only {
+  display: none;
+}
+
 .nav__toggle-line {
   width: 24px;
   height: 2px;
@@ -1516,12 +1520,13 @@ a:hover {
 
 @media (max-width: 768px) {
   :root {
-    --container-padding: 1rem;
+    --container-padding: 0.5rem;
   }
   
   .nav {
-    flex-wrap: wrap;
-    gap: var(--spacing-md);
+    flex-wrap: nowrap;
+    gap: var(--spacing-sm);
+    justify-content: space-between;
   }
   
   .nav__menu {
@@ -1561,6 +1566,18 @@ a:hover {
     font-weight: 600;
   }
   
+  .nav__menu .btn {
+    display: block;
+    margin: var(--spacing-md) var(--spacing-lg);
+    text-align: center;
+    font-size: var(--font-size-lg);
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+  
+  .nav__item--mobile-only {
+    display: block;
+  }
+  
   .nav__toggle {
     display: flex;
     order: 3;
@@ -1572,23 +1589,31 @@ a:hover {
   }
   
   .nav__actions {
-    order: 2;
-    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    flex: 0 0 auto;
   }
   
   .nav__actions .btn {
-    font-size: var(--font-size-sm);
-    padding: var(--spacing-sm) var(--spacing-md);
+    display: none;
   }
   
   .theme-toggle {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
   }
   
   .theme-toggle svg {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .nav__toggle {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
   }
   
   /* Mobile navigation improvements */
@@ -1597,15 +1622,21 @@ a:hover {
   }
   
   .nav__brand {
-    flex: 1;
+    flex: 0 0 auto;
     min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
   }
   
   .nav__brand-text {
-    font-size: var(--font-size-xs);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display: none;
+  }
+  
+  .nav__logo {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
   }
   
   .hero__title {

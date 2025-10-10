@@ -40,18 +40,17 @@ Sanjose/
 │   └── styles.css          # Main stylesheet
 ├── js/
 │   └── main.js             # JavaScript functionality
+├── images/
+│   ├── hero.svg            # Hero image
+│   ├── team-member-1.svg   # Team member 1
+│   ├── team-member-2.svg   # Team member 2
+│   ├── team-member-3.svg   # Team member 3
+│   ├── testimonial-1.svg   # Testimonial avatar 1
+│   ├── testimonial-2.svg   # Testimonial avatar 2
+│   └── testimonial-3.svg   # Testimonial avatar 3
 ├── assets/
 │   ├── logo.svg            # Company logo
-│   ├── favicon.ico         # Favicon
-│   ├── hero.jpg            # Hero image
-│   ├── hero.webp           # Hero image (WebP)
-│   ├── team-office.jpg     # Team office image
-│   ├── avatar-1.jpg        # Testimonial avatar 1
-│   ├── avatar-2.jpg        # Testimonial avatar 2
-│   ├── avatar-3.jpg        # Testimonial avatar 3
-│   ├── team-member-1.jpg   # Team member 1
-│   ├── team-member-2.jpg   # Team member 2
-│   └── team-member-3.jpg   # Team member 3
+│   └── favicon.ico         # Favicon
 └── README.md               # This file
 ```
 
@@ -141,15 +140,15 @@ Edit the CSS custom properties in `css/styles.css`:
 ```
 
 ### Adding Images
-1. **Replace** placeholder images in `assets/` folder
+1. **Replace** placeholder images in `images/` folder
 2. **Maintain** the same filenames or update references in HTML
 3. **Optimize** images for web (recommended: WebP format with JPG fallback)
 
 ### Updating Contact Information
 Search and replace the following in all HTML files:
-- Phone: `+1 (555) 012-3456`
+- Phone: `+254 700 123 456`
 - Email: `info@sanjosetechsolutions.com`
-- Address: `123 Tech Street, San Jose, CA 95110`
+- Address: `Moi Avenue, Nyali, Mombasa, Kenya`
 
 ## 🔧 Technical Details
 
@@ -163,7 +162,7 @@ Search and replace the following in all HTML files:
 ### Performance
 - **Lighthouse Score**: 90+ on all metrics
 - **Core Web Vitals**: Optimized for LCP, FID, and CLS
-- **Image Optimization**: WebP with JPG fallbacks
+- **Image Optimization**: SVG with proper fallbacks
 - **Lazy Loading**: Images load as needed
 
 ### Accessibility Features
@@ -218,7 +217,7 @@ To add Google Analytics, insert the tracking code before the closing `</head>` t
    - Check browser console for errors
 
 2. **Images not loading**
-   - Verify file paths in `assets/` folder
+   - Verify file paths in `images/` folder
    - Check image file permissions
    - Ensure images are optimized
 
@@ -240,7 +239,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 For technical support or customization requests:
 - **Email**: info@sanjosetechsolutions.com
-- **Phone**: +1 (555) 012-3456
+- **Phone**: +254 700 123 456
 
 ## 📈 Future Enhancements
 

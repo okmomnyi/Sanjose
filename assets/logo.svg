@@ -1,36 +1,65 @@
-<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background circle -->
-  <circle cx="20" cy="20" r="20" fill="#0F4C81"/>
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F4C81" />
+      <stop offset="100%" stop-color="#00A6A6" />
+    </linearGradient>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E0F2FE" />
+    </linearGradient>
+  </defs>
   
-  <!-- Tech circuit pattern -->
-  <g fill="#00A6A6">
-    <!-- Central processor -->
-    <rect x="16" y="16" width="8" height="8" rx="1" fill="#FFFFFF"/>
-    <rect x="17" y="17" width="6" height="6" rx="0.5" fill="#0F4C81"/>
+  <!-- Logo icon -->
+  <g transform="translate(40, 20)">
+    <!-- Main circle background -->
+    <circle cx="80" cy="80" r="70" fill="url(#bgGradient)" />
     
-    <!-- Circuit connections -->
-    <rect x="12" y="19" width="4" height="2" rx="1"/>
-    <rect x="24" y="19" width="4" height="2" rx="1"/>
-    <rect x="19" y="12" width="2" height="4" rx="1"/>
-    <rect x="19" y="24" width="2" height="4" rx="1"/>
+    <!-- Abstract circuit/network design -->
+    <g stroke="url(#iconGradient)" stroke-width="4" stroke-linecap="round" fill="none">
+      <!-- Central node -->
+      <circle cx="80" cy="80" r="12" fill="url(#iconGradient)" />
+      
+      <!-- Connecting lines to outer nodes -->
+      <line x1="80" y1="80" x2="80" y2="30" />
+      <line x1="80" y1="80" x2="125" y2="55" />
+      <line x1="80" y1="80" x2="125" y2="105" />
+      <line x1="80" y1="80" x2="80" y2="130" />
+      <line x1="80" y1="80" x2="35" y2="105" />
+      <line x1="80" y1="80" x2="35" y2="55" />
+      
+      <!-- Outer nodes -->
+      <circle cx="80" cy="30" r="8" fill="url(#iconGradient)" />
+      <circle cx="125" cy="55" r="8" fill="url(#iconGradient)" />
+      <circle cx="125" cy="105" r="8" fill="url(#iconGradient)" />
+      <circle cx="80" cy="130" r="8" fill="url(#iconGradient)" />
+      <circle cx="35" cy="105" r="8" fill="url(#iconGradient)" />
+      <circle cx="35" cy="55" r="8" fill="url(#iconGradient)" />
+      
+      <!-- Data flow indicators -->
+      <circle cx="80" cy="55" r="4" fill="url(#iconGradient)" />
+      <circle cx="105" cy="68" r="4" fill="url(#iconGradient)" />
+      <circle cx="105" cy="92" r="4" fill="url(#iconGradient)" />
+      <circle cx="80" cy="105" r="4" fill="url(#iconGradient)" />
+      <circle cx="55" cy="92" r="4" fill="url(#iconGradient)" />
+      <circle cx="55" cy="68" r="4" fill="url(#iconGradient)" />
+    </g>
     
-    <!-- Corner nodes -->
-    <circle cx="8" cy="8" r="2" fill="#D4AF37"/>
-    <circle cx="32" cy="8" r="2"/>
-    <circle cx="8" cy="32" r="2"/>
-    <circle cx="32" cy="32" r="2" fill="#D4AF37"/>
-    
-    <!-- Connection lines -->
-    <path d="M10 8 L14 19" stroke="#00A6A6" stroke-width="1.5" stroke-linecap="round"/>
-    <path d="M30 8 L26 19" stroke="#00A6A6" stroke-width="1.5" stroke-linecap="round"/>
-    <path d="M8 10 L19 14" stroke="#00A6A6" stroke-width="1.5" stroke-linecap="round"/>
-    <path d="M8 30 L19 26" stroke="#00A6A6" stroke-width="1.5" stroke-linecap="round"/>
-    <path d="M32 10 L26 19" stroke="#00A6A6" stroke-width="1.5" stroke-linecap="round"/>
-    <path d="M32 30 L26 19" stroke="#00A6A6" stroke-width="1.5" stroke-linecap="round"/>
-    <path d="M10 32 L19 26" stroke="#00A6A6" stroke-width="1.5" stroke-linecap="round"/>
-    <path d="M30 32 L26 19" stroke="#00A6A6" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Subtle wave element representing "digital serenity" -->
+    <path d="M45 145 Q 80 155 115 145" stroke="url(#iconGradient)" stroke-width="2" fill="none" stroke-opacity="0.7" />
+    <path d="M50 150 Q 80 160 110 150" stroke="url(#iconGradient)" stroke-width="2" fill="none" stroke-opacity="0.5" />
   </g>
   
-  <!-- Company initial -->
-  <text x="20" y="26" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#FFFFFF">S</text>
+  <!-- Company name text -->
+  <text x="150" y="85" font-family="Inter, sans-serif" font-weight="700" font-size="32" fill="#0F4C81">
+    Sanjose
+  </text>
+  <text x="150" y="120" font-family="Inter, sans-serif" font-weight="600" font-size="24" fill="#00A6A6">
+    Tech Solutions
+  </text>
+  
+  <!-- Tagline -->
+  <text x="150" y="150" font-family="Inter, sans-serif" font-weight="400" font-size="14" fill="#64748B">
+    Restoring Digital Serenity
+  </text>
 </svg>

@@ -147,7 +147,7 @@ Edit the CSS custom properties in `css/styles.css`:
 ### Updating Contact Information
 Search and replace the following in all HTML files:
 - Phone: `+254 700 123 456`
-- Email: `info@sanjosetechsolutions.com`
+- Email: `sanjosecomputer2012@gmail.com`
 - Address: `Moi Avenue, Nyali, Mombasa, Kenya`
 
 ## 🔧 Technical Details
@@ -238,7 +238,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## 🤝 Support
 
 For technical support or customization requests:
-- **Email**: info@sanjosetechsolutions.com
+- **Email**: sanjosecomputer2012@gmail.com
 - **Phone**: +254 700 123 456
 
 ## 📈 Future Enhancements

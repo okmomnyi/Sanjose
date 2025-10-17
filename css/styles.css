@@ -97,6 +97,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Prevent horizontal overflow on small screens */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
@@ -1528,8 +1539,7 @@ a:hover {
   .mission__image img {
     max-height: 300px;
   }
-}
-  
+
   .service-detail__features {
     grid-template-columns: 1fr;
     gap: var(--spacing-xl);
